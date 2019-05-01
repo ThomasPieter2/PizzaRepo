@@ -5,8 +5,8 @@ EXPOSE 443
 
 FROM microsoft/dotnet:2.2-sdk AS build
 WORKDIR /src
-COPY ["PizzaReservation.WebApp/PizzaReservation.WebApp.csproj", "PizzaReservation.WebApp/"]
-COPY ["PizzaReservation.Models/PizzaReservation.Models.csproj", "PizzaReservation.Models/"]
+COPY ["*/PizzaReservation.WebApp/PizzaReservation.WebApp.csproj", "PizzaReservation.WebApp/"]
+COPY ["*/PizzaReservation.Models/PizzaReservation.Models.csproj", "PizzaReservation.Models/"]
 RUN dotnet restore "PizzaReservation.WebApp/PizzaReservation.WebApp.csproj"
 COPY . .
 WORKDIR "/src/PizzaReservation.WebApp"
