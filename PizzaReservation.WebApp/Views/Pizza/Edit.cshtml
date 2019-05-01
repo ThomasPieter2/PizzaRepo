@@ -1,0 +1,63 @@
+﻿@model PizzaReservation.WebApp.ViewModels.PizzaVM
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Pizza</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Pizza.PizzaId" />
+            <div class="form-group">
+                <label asp-for="Pizza.Name" class="control-label"></label>
+                <input asp-for="Pizza.Name" class="form-control" />
+                <span asp-validation-for="Pizza.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Pizza.ImageUrl" class="control-label"></label>
+                <input asp-for="Pizza.ImageUrl" class="form-control" />
+                <span asp-validation-for="Pizza.ImageUrl" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SelectedToppings" class="control-label"></label>
+                @foreach (var item in Model.Toppings)
+                {
+                    <input type="checkbox" name="SelectedToppingsString"
+                           @if (Model.SelectedToppings != null) { foreach (var pt in Model.SelectedToppings) { if (pt.ToppingId.ToString() == item.Value) { <text> checked="checked" </text> } } }
+                           value="@item.Value" />
+                    @item.Text.Trim() <br />
+                }
+                <span asp-validation-for="SelectedToppingsString" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="SelectedSizes" class="control-label"></label>
+                @foreach (var item in Model.Sizes)
+                {
+                    <input type="checkbox" name="SelectedSizesString"
+                           @if (Model.SelectedSizes != null) { foreach (var ps in Model.SelectedSizes) { if (ps.SizeId.ToString() == item.Value) { <text> checked="checked" </text> } } }
+                           value="@item.Value" />
+                    @item.Text.Trim() <br />
+                }
+                <span asp-validation-for="SelectedSizesString" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

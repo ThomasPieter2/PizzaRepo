@@ -1,0 +1,76 @@
+﻿@model PizzaReservation.WebApp.ViewModels.PizzaOrdersVM
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Order</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Order.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Order.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Order.Email)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Order.Email)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Order.PhoneNumber)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Order.PhoneNumber)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Order.DeliveryAddress)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Order.DeliveryAddress)
+        </dd>
+        <dt class="col-sm-2">
+            @*@Html.DisplayNameFor(model => model.Order.PizzaOrders)*@
+            Pizza's
+        </dt>
+        <dd class="col-sm-10">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <th>Pizza</th>
+                                    <th>Size</th>
+                                    <th>Price</th>
+                                </tr>
+
+                                @for (int i = 0; i < Model.SelectedPizzas.Count(); i++)
+                                {
+                                    <tr>
+                                        <td>@Model.SelectedPizzas.ToList()[i].Name</td>
+                                        <td>@Model.SelectedOrderSizes.ToList()[i].Name</td>
+                                        <td>€@Model.SelectedOrderPizzas.ToList()[i].Price</td>
+                                    </tr>
+                                }
+                            </table>
+                        </td>
+
+                        <td style="width: 200px">
+                            <ul></ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Order.OrderId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,2 @@
+2019-04-15 10:48:22.444 +02:00 [Warning] Serilog running
+2019-04-15 10:48:40.288 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.

@@ -1,0 +1,95 @@
+﻿@model PizzaReservation.WebApp.ViewModels.PizzaOrdersVM
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Order</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Order.Name" class="control-label"></label>
+                <input asp-for="Order.Name" class="form-control" />
+                <span asp-validation-for="Order.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Order.Email" class="control-label"></label>
+                <input asp-for="Order.Email" class="form-control" />
+                <span asp-validation-for="Order.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Order.PhoneNumber" class="control-label"></label>
+                <input asp-for="Order.PhoneNumber" class="form-control" />
+                <span asp-validation-for="Order.PhoneNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Order.DeliveryAddress" class="control-label"></label>
+                <input asp-for="Order.DeliveryAddress" class="form-control" />
+                <span asp-validation-for="Order.DeliveryAddress" class="text-danger"></span>
+            </div>
+            @*<div class="form-group">
+            <label asp-for="Order.PizzaOrders" class="control-label"></label>
+            @foreach (var item in Model.Pizzasorder)
+            {
+                <input type="checkbox" name="SelectedPizzasString"
+                       @if (Model.SelectedPizzas != null) { foreach (var p in Model.SelectedPizzas) { if (p.PizzaId.ToString() == item.Value) { <text> checked="checked" </text> } } }
+                       value="@item.Value" />
+                @item.Text.Trim() <br />
+                <select>
+                    @foreach (var pizza in Model.SelectedPizzas)
+                    {
+                        foreach (var ps in pizza.PizzaSizes)
+                        {
+                            <option>@ps.Size.Name</option>
+                        }
+                    }
+                </select>
+            }
+            <span asp-validation-for="SelectedPizzasString" class="text-danger"></span>
+        </div>*@
+
+            <div class="form-group">
+                @*<label asp-for="Order.PizzaOrders" class="control-label"></label><br />*@
+                <label>Pizza's</label><br />
+                @foreach (var item in Model.Pizzas)
+                {
+                    <input type="checkbox" name="SelectedToppingsString"
+                           @if (Model.SelectedPizzas != null) { foreach (var pt in Model.SelectedPizzas) { if (pt.PizzaId.ToString() == item.Value) { <text> checked="checked" </text> } } }
+                           value="@item.Value" />
+                    @item.Text.Trim()
+
+
+
+                    @*<select asp-for="SelectedSizesString" asp-items="@Model.PizzaSizes[item.Text]" />*@
+                    <select>
+                        @foreach (var size in Model.PizzaSizes[item.Text])
+                        {
+
+                            <!option value="@size.Text">@size.Text</!option>
+
+                        }
+                    </select><br />
+                    <span asp-validation-for="SelectedSizesString" class="text-danger"></span>
+                }
+
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

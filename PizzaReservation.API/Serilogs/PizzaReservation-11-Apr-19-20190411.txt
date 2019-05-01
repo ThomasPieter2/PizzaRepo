@@ -1,0 +1,179 @@
+2019-04-11 14:01:30.412 +02:00 [Warning] Serilog running
+2019-04-11 14:01:57.317 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-11 14:02:57.151 +02:00 [Warning] Serilog running
+2019-04-11 14:03:02.452 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-11 14:06:29.511 +02:00 [Warning] Serilog running
+2019-04-11 14:06:44.072 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-11 14:11:29.658 +02:00 [Warning] Serilog running
+2019-04-11 14:42:03.615 +02:00 [Warning] Serilog running
+2019-04-11 14:42:29.857 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-11 14:43:08.830 +02:00 [Warning] Serilog running
+2019-04-11 14:43:22.510 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-11 14:44:35.163 +02:00 [Warning] Serilog running
+2019-04-11 14:44:41.893 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-11 14:47:22.951 +02:00 [Warning] Serilog running
+2019-04-11 14:47:28.161 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-11 14:49:39.622 +02:00 [Warning] Serilog running
+2019-04-11 14:49:57.756 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-11 14:54:13.081 +02:00 [Warning] Serilog running
+2019-04-11 14:54:40.727 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-11 14:56:11.770 +02:00 [Warning] Serilog running
+2019-04-11 14:56:24.307 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-11 15:00:32.954 +02:00 [Warning] Serilog running
+2019-04-11 15:00:40.665 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-11 15:02:17.015 +02:00 [Warning] Serilog running
+2019-04-11 15:02:26.787 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-11 15:20:07.483 +02:00 [Warning] Serilog running
+2019-04-11 15:20:27.475 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-11 15:23:16.233 +02:00 [Warning] Serilog running
+2019-04-11 15:23:32.849 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-11 15:24:22.366 +02:00 [Warning] Serilog running
+2019-04-11 15:24:35.008 +02:00 [Warning] Serilog running
+2019-04-11 15:24:41.137 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-11 15:27:18.683 +02:00 [Warning] Serilog running
+2019-04-11 15:27:37.786 +02:00 [Warning] Serilog running
+2019-04-11 15:27:42.857 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-11 15:28:52.654 +02:00 [Warning] Serilog running
+2019-04-11 15:28:57.690 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-11 15:31:06.623 +02:00 [Warning] Serilog running
+2019-04-11 15:31:11.261 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-11 15:32:43.325 +02:00 [Warning] Serilog running
+2019-04-11 15:32:54.302 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-11 15:35:41.672 +02:00 [Warning] Serilog running
+2019-04-11 15:35:47.767 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-11 15:35:48.089 +02:00 [Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The Include property lambda expression 'p => {p.PizzaSizes => First()}.Size' is invalid. The expression should represent a property access: 't => t.MyProperty'. To target navigations declared on derived types, specify an explicitly typed lambda parameter of the target type, E.g. '(Derived d) => d.MyProperty'. For more information on including related data, see http://go.microsoft.com/fwlink/?LinkID=746393.
+   at PizzaReservation.Models.Repositories.PizzaRepo.Test() in D:\Backend\PizzaReservation\PizzaReservation\PizzaReservation.Models\Repositories\PizzaRepo.cs:line 46
+   at PizzaReservation.API.Controllers.PizzasController.GetPizzasAsync() in D:\Backend\PizzaReservation\PizzaReservation\PizzaReservation.API\Controllers\PizzasController.cs:line 34
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-04-11 15:38:29.990 +02:00 [Warning] Serilog running
+2019-04-11 15:38:33.543 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-11 15:38:33.849 +02:00 [Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The Include property lambda expression 'p => {from PizzaSize ps in p.PizzaSizes select [ps].Size}' is invalid. The expression should represent a property access: 't => t.MyProperty'. To target navigations declared on derived types, specify an explicitly typed lambda parameter of the target type, E.g. '(Derived d) => d.MyProperty'. For more information on including related data, see http://go.microsoft.com/fwlink/?LinkID=746393.
+   at PizzaReservation.Models.Repositories.PizzaRepo.Test() in D:\Backend\PizzaReservation\PizzaReservation\PizzaReservation.Models\Repositories\PizzaRepo.cs:line 46
+   at PizzaReservation.API.Controllers.PizzasController.GetPizzasAsync() in D:\Backend\PizzaReservation\PizzaReservation\PizzaReservation.API\Controllers\PizzasController.cs:line 34
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-04-11 15:40:01.053 +02:00 [Warning] Serilog running
+2019-04-11 15:40:04.661 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-11 15:41:14.064 +02:00 [Warning] Serilog running
+2019-04-11 15:41:17.729 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-11 15:41:18.060 +02:00 [Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The ThenInclude property lambda expression 'ps => {ps.Size.Name => First()}' is invalid. The expression should represent a property access: 't => t.MyProperty'. To target navigations declared on derived types, specify an explicitly typed lambda parameter of the target type, E.g. '(Derived d) => d.MyProperty'. For more information on including related data, see http://go.microsoft.com/fwlink/?LinkID=746393.
+   at PizzaReservation.Models.Repositories.PizzaRepo.Test() in D:\Backend\PizzaReservation\PizzaReservation\PizzaReservation.Models\Repositories\PizzaRepo.cs:line 46
+   at PizzaReservation.API.Controllers.PizzasController.GetPizzasAsync() in D:\Backend\PizzaReservation\PizzaReservation\PizzaReservation.API\Controllers\PizzasController.cs:line 34
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-04-11 15:44:33.963 +02:00 [Warning] Serilog running
+2019-04-11 15:44:37.309 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-11 15:45:32.188 +02:00 [Warning] Serilog running
+2019-04-11 15:45:35.040 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-11 15:48:46.453 +02:00 [Warning] Serilog running
+2019-04-11 15:48:49.553 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-11 15:48:49.871 +02:00 [Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The property 'Name' is not a navigation property of entity type 'Size'. The 'Include(string)' method can only be used with a '.' separated list of navigation property names.
+   at PizzaReservation.Models.Repositories.PizzaRepo.Test() in D:\Backend\PizzaReservation\PizzaReservation\PizzaReservation.Models\Repositories\PizzaRepo.cs:line 48
+   at PizzaReservation.API.Controllers.PizzasController.GetPizzasAsync() in D:\Backend\PizzaReservation\PizzaReservation\PizzaReservation.API\Controllers\PizzasController.cs:line 34
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-04-11 15:49:47.270 +02:00 [Warning] Serilog running
+2019-04-11 15:49:51.930 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-11 15:49:52.255 +02:00 [Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The property 'Name' is not a navigation property of entity type 'Size'. The 'Include(string)' method can only be used with a '.' separated list of navigation property names.
+   at PizzaReservation.Models.Repositories.PizzaRepo.Test() in D:\Backend\PizzaReservation\PizzaReservation\PizzaReservation.Models\Repositories\PizzaRepo.cs:line 48
+   at PizzaReservation.API.Controllers.PizzasController.GetPizzasAsync() in D:\Backend\PizzaReservation\PizzaReservation\PizzaReservation.API\Controllers\PizzasController.cs:line 34
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-04-11 16:03:00.640 +02:00 [Warning] Serilog running
+2019-04-11 16:03:09.055 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-11 16:10:37.841 +02:00 [Warning] Serilog running
+2019-04-11 16:10:46.224 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-11 16:22:55.777 +02:00 [Warning] Serilog running
+2019-04-11 16:23:04.325 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-11 16:36:01.014 +02:00 [Warning] Serilog running
+2019-04-11 16:36:05.934 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-11 16:36:06.160 +02:00 [Warning] The LINQ expression '"Distinct()"' could not be translated and will be evaluated locally.
+2019-04-11 16:36:06.164 +02:00 [Warning] The LINQ expression '"Distinct()"' could not be translated and will be evaluated locally.
+2019-04-11 16:41:33.488 +02:00 [Warning] Serilog running
+2019-04-11 16:41:39.969 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-11 16:46:19.457 +02:00 [Warning] Serilog running
+2019-04-11 16:46:23.973 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-11 16:47:12.045 +02:00 [Warning] Serilog running
+2019-04-11 16:47:15.122 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-11 16:50:39.827 +02:00 [Warning] Serilog running

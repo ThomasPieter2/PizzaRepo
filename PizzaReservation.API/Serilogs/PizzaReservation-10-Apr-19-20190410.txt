@@ -1,0 +1,61 @@
+2019-04-10 11:45:09.820 +02:00 [Warning] Serilog running
+2019-04-10 11:45:26.758 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-10 11:47:15.597 +02:00 [Warning] Serilog running
+2019-04-10 11:47:20.911 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-10 11:47:21.327 +02:00 [Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The property 'Name' is not a navigation property of entity type 'Size'. The 'Include(string)' method can only be used with a '.' separated list of navigation property names.
+   at Microsoft.EntityFrameworkCore.Query.Internal.IncludeCompiler.WalkNavigations(IEntityType entityType, IReadOnlyList`1 navigationPropertyPaths, IncludeLoadTree includeLoadTree, Boolean shouldThrow)
+   at Microsoft.EntityFrameworkCore.Query.Internal.IncludeCompiler.TryPopulateIncludeLoadTree(IncludeResultOperator includeResultOperator, IncludeLoadTree includeLoadTree, Boolean shouldThrow)
+   at Microsoft.EntityFrameworkCore.Query.Internal.IncludeCompiler.CreateIncludeLoadTrees(QueryModel queryModel, Boolean shouldThrow)
+   at Microsoft.EntityFrameworkCore.Query.Internal.IncludeCompiler.CompileIncludes(QueryModel queryModel, Boolean trackingQuery, Boolean asyncQuery, Boolean shouldThrow)
+   at Microsoft.EntityFrameworkCore.Query.EntityQueryModelVisitor.OptimizeQueryModel(QueryModel queryModel, Boolean asyncQuery)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryModelVisitor.OptimizeQueryModel(QueryModel queryModel, Boolean asyncQuery)
+   at Microsoft.EntityFrameworkCore.Query.EntityQueryModelVisitor.CreateAsyncQueryExecutor[TResult](QueryModel queryModel)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileAsyncQuery[TResult](QueryModel queryModel)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileAsyncQueryCore[TResult](Expression query, IQueryModelGenerator queryModelGenerator, IDatabase database)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass22_0`1.<CompileAsyncQuery>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQueryCore[TFunc](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddAsyncQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileAsyncQuery[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.System.Collections.Generic.IAsyncEnumerable<TResult>.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.IncludableQueryable`2.System.Collections.Generic.IAsyncEnumerable<TEntity>.GetEnumerator()
+   at System.Linq.AsyncEnumerable.Aggregate_[TSource,TAccumulate,TResult](IAsyncEnumerable`1 source, TAccumulate seed, Func`3 accumulator, Func`2 resultSelector, CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Aggregate.cs:line 118
+   at PizzaReservation.Models.Repositories.PizzaRepo.GetAllPizzaAsync() in D:\Backend\PizzaReservation\PizzaReservation\PizzaReservation.Models\Repositories\PizzaRepo.cs:line 30
+   at PizzaReservation.API.Controllers.PizzasController.Test() in D:\Backend\PizzaReservation\PizzaReservation\PizzaReservation.API\Controllers\PizzasController.cs:line 33
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-04-10 11:48:16.958 +02:00 [Warning] Serilog running
+2019-04-10 11:48:24.552 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-10 11:49:20.535 +02:00 [Warning] Serilog running
+2019-04-10 11:49:30.083 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-10 11:51:28.978 +02:00 [Warning] Serilog running
+2019-04-10 11:51:34.091 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-10 11:53:15.672 +02:00 [Warning] Serilog running
+2019-04-10 11:53:22.273 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-10 13:05:48.089 +02:00 [Warning] Serilog running
+2019-04-10 13:06:09.209 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-10 13:07:42.220 +02:00 [Warning] Serilog running
+2019-04-10 13:08:01.340 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-10 13:09:41.451 +02:00 [Warning] Serilog running
+2019-04-10 13:09:48.816 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-10 13:11:12.673 +02:00 [Warning] Serilog running
+2019-04-10 13:11:18.784 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-04-10 13:11:46.373 +02:00 [Warning] Serilog running
+2019-04-10 13:11:56.328 +02:00 [Warning] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
