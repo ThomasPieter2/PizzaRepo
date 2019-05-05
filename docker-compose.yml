@@ -1,8 +1,0 @@
-version: '3.4'
-
-services:
-  pizzareservation.webapp:
-    image: ${DOCKER_REGISTRY-}pizzareservationwebapp
-    build:
-      context: .
-      dockerfile: PizzaReservation.WebApp/Dockerfile
